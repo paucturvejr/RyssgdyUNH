@@ -21,10 +21,6 @@ jobs:
     runs-on: ${{ matrix.os }}
     env:
       NUGET_CERT_REVOCATION_MODE: offline
-    steps:
-    - uses: actions/checkout@v3
-      with:
-        clean: true
 
     - name: Setup .NET
       uses: actions/setup-dotnet@v3
